@@ -109,7 +109,7 @@ $(document).ready(function() {
     $('.lang-on').click(function(event) {
         event.preventDefault();
         $('.popup-lang').css('display', 'flex');
-        $('.wrapper').css('filter', 'blur(30px)');
+        $('.wrapper, .main-head').css('filter', 'blur(30px)');
         $('.main-wrapper').css({
             'position': 'fixed',
             'width': '100%',
@@ -120,7 +120,7 @@ $(document).ready(function() {
     // popup close
     $('.popup-lang, .lang li').click(function() {
         $('.popup-lang').css('display', 'none');
-        $('.wrapper').css('filter', 'none');
+        $('.wrapper, .main-head').css('filter', 'none');
         $('.main-wrapper').css({
             'position': 'relative',
             'margin': '0'

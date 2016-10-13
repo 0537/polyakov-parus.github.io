@@ -310,6 +310,10 @@ header .header-wrapper {
   justify-content: space-between;
 }
 
+header {
+  transition: .3s ease;
+}
+
 button.fill--red {
   background: #F76767;
   border-color: #F76767;
