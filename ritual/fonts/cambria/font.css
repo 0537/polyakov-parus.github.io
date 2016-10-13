@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Cambria';
+  src: url('Cambria.eot');
+  src: url('Cambria.woff2') format('woff2'),
+       url('Cambria.woff') format('woff'),
+       url('Cambria.ttf') format('truetype'),
+       url('Cambria.svg#Cambria') format('svg'),
+       url('Cambria.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CambriaMath';
+  src: url('CambriaMath.eot');
+  src: url('CambriaMath.woff2') format('woff2'),
+       url('CambriaMath.woff') format('woff'),
+       url('CambriaMath.ttf') format('truetype'),
+       url('CambriaMath.svg#CambriaMath') format('svg'),
+       url('CambriaMath.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'ClinicaPro-Regular';
+  src: url('ClinicaPro-Regular.eot');
+  src: url('ClinicaPro-Regular.woff2') format('woff2'),
+       url('ClinicaPro-Regular.woff') format('woff'),
+       url('ClinicaPro-Regular.ttf') format('truetype'),
+       url('ClinicaPro-Regular.svg#ClinicaPro-Regular') format('svg'),
+       url('ClinicaPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

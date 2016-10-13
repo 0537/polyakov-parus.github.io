@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Acrom-Regular';
+  src: url('Acrom-Regular.eot');
+  src: url('Acrom-Regular.woff2') format('woff2'),
+       url('Acrom-Regular.woff') format('woff'),
+       url('Acrom-Regular.ttf') format('truetype'),
+       url('Acrom-Regular.svg#Acrom-Regular') format('svg'),
+       url('Acrom-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
