@@ -110,6 +110,7 @@ $(document).ready(function() {
         event.preventDefault();
         $('.popup-lang').css('display', 'flex');
         $('.wrapper, .main-head').css('filter', 'blur(30px)');
+        $('.wrapper, .main-head').css('-webkit-filter', 'blur(30px)');
         $('.main-wrapper').css({
             'position': 'fixed',
             'width': '100%',
