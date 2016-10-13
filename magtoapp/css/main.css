@@ -2296,6 +2296,9 @@ h4.wtf {
     margin-top: 10px;
     margin-right: 0;
   }
+  .back-circle {
+    display: none;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -2636,7 +2639,7 @@ h4.wtf {
     display: none;
   }
   .block-item {
-    height: 330px;
+    height: 350px;
     padding-bottom: 15px;
     padding-top: 10px;
     margin-bottom: 15px;
@@ -2825,56 +2828,11 @@ h4.wtf {
     font-size: 20px;
     height: 100%;
   }
+  .popup-lang {
+    height: 170%;
+  }
 }
 
-/*
-@media only screen and (max-width : 700px) {
-	.nav-item:first-child,
-	.nav-item:nth-child(2),
-	.nav-item:nth-child(3),
-	.nav-item:nth-child(4),
-	.nav-item:nth-child(5),
-	.nav-item:last-child {
-
-		height: 300px;
-		padding-left: 50px;
-		padding-top: 50px;
-		padding-right: 10%;
-		button {font-size: 14px;}
-		h2 {font-size: 18px;}
-		.big {font-size: 14px; margin-bottom: 20px;}
-		.thin {margin-bottom: 15px;}
-	}
-
-	.nav-item:nth-child(2) {padding-top: 65px;}
-}
-
-@media only screen and (max-width : 600px) {
-
-
-
-
-	.nav-item:first-child,
-	.nav-item:nth-child(2),
-	.nav-item:nth-child(3),
-	.nav-item:nth-child(4),
-	.nav-item:nth-child(5),
-	.nav-item:last-child {
-		width: calc(50% - 10px);
-		height: 260px;
-		margin-right: 20px;
-		margin-bottom: 20px;
-		padding: 40px;
-		button {bottom: auto;}
-		.big {margin-bottom: 20px;}
-	}
-
-	.nav-item:nth-child(even) {margin-right: 0;}
-
-
-
-}
-*/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .cash-text {
@@ -2970,6 +2928,9 @@ h4.wtf {
     padding-right: 15px;
     margin-top: 50px;
     margin-bottom: 10px;
+  }
+  .popup-lang {
+    height: 170%;
   }
 }
 
