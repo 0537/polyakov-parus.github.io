@@ -122,6 +122,7 @@ $(document).ready(function() {
     $('.popup-lang, .lang li').click(function() {
         $('.popup-lang').css('display', 'none');
         $('.wrapper, .main-head').css('filter', 'none');
+        $('.wrapper, .main-head').css('-webkit-filter', 'none');
         $('.main-wrapper').css({
             'position': 'relative',
             'margin': '0'
