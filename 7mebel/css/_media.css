@@ -1,0 +1,12 @@
+/* 
+---- MAIN PAGE MQ
+ */
+@media screen and (max-width: 1200px) {
+  .main-header .wrapper .header_logo {
+    width: 20%;
+  }
+  .main-header .wrapper .header_phones {
+    width: 70%;
+    text-align: center;
+  }
+}
