@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('.call').click(function(event) { // лoвим клик
         event.preventDefault(); // выключaем стaндaртную рoль элементa
         $('.popup').css('display', 'block'); // убирaем у мoдaльнoгo oкнa display: none;
@@ -23,6 +22,16 @@ $(document).ready(function() {
     });
 });
 
+$("a[href='#projects']").mPageScroll2id();
+$('.hvr-sweep-to-right').click(function() {
+    $(this).blur();
+    /*
+    if (this.hasClass('.hvr-sweep-to-right:hover')) {
+      $(this).css('color', 'black');
+    };
+    */
+});
+
 $(".owl-carousel").owlCarousel({
     loop: true,
     items: 1,
@@ -44,34 +53,10 @@ $navBtn.click(function(event) {
 
 var $phoneTrig = $('.phones');
 
-$phoneTrig.click(function(){
-	$('.phones-wrp').slideToggle(200);
+$phoneTrig.click(function() {
+    $('.phones-wrp').slideToggle(200);
 });
 
-
-/*
-
-if($navIcon.hasClass('clicked')) {
-  $(document).click(function (event) {
-    $navIcon.removeClass('clicked');
-    $nav.slideDown('fast');
-  });
-}
-
-var $navBtn = $('.navBtn');
-var $nav = $('.toggle-nav');
-var $navIcon = $('.navBtn i');
-
-$navBtn.click(function(){
-	if($navIcon.hasClass('clicked')){
-		$navIcon.removeClass('clicked')
-	} else {
-		$navIcon.addClass('clicked')
-	}
-	$nav.slideToggle(400);
-});
-
-*/
 
 function initMap() {
     var myLatLng = {
@@ -85,8 +70,8 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: myLatLng,
-      //  scrollwheel: false,
-      //  draggable: false
+        //  scrollwheel: false,
+        //  draggable: false
     });
 
     var gIcon = {
