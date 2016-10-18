@@ -153,3 +153,6 @@ function initMap() {
 $(function() {
     $('.number').mask('+7 (999) 999-99-99');
 });
+$(function() {
+    $('.number-1').mask('+7 (999) 999-99-99');
+});
