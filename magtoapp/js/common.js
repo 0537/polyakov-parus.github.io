@@ -1,59 +1,91 @@
 $(document).ready(function() {
 
     $(window).scroll(function() {
-      var st = $(this).scrollTop();
-      $('.present-img').css ({
-        'transform' : "translate(0%, -" + st/50 + "%"
-      });
+        var st = $(this).scrollTop();
+        $('.present-img').css ({
+            'transform' : "translate(0%, -" + st/50 + "%"
+        });
     });
 
-    $('#blogapp-carousel').owlCarousel({
+    // popup
+    $('.lang-on').click(function(event) {
+        event.preventDefault();
+        $('.popup-lang').css({
+            'display': 'flex',
+            'display': '-webkit-flex'
+        });
+        $('.blur-wrapper').css({
+            'filter': 'blur(30px)',
+            '-webkit-filter': 'blur(30px)'
+        });
+        $('.blur-wrapper').css({
+            'position': 'fixed',
+            'width': '100%',
+            'margin': '0 auto'
+        });
+    });
+
+    // popup close
+    $('.popup-lang, .lang li').click(function() {
+        $('.popup-lang').css('display', 'none');
+        $('.blur-wrapper').css({
+            'filter': 'none',
+            '-webkit-filter': 'none'
+        });
+        $('.blur-wrapper').css({
+            'position': 'relative',
+            'margin': '0'
+        });
+    });
+
+    // close lang panel
+    $('.lang-off').click(function() {
+        $('.lang').css('display', 'none');
+    })
+
+    $('.cash-wrapper--carousel').parallax({
+        imageSrc: 'img/wp-carousel.jpg',
+        speed: 0.4
+    });
+    $('.cash-wrapper--magazines').parallax({
+        imageSrc: 'img/wp-magazines.jpg',
+        speed: 0.4
+    });
+
+    $('.cash-wrapper--hotnews').parallax({
+        imageSrc: 'img/wp-hotnews.jpg',
+        speed: 0.4
+    });
+
+    $('.cash-wrapper--blogapp').parallax({
+        imageSrc: 'img/wp-blogapp.jpg',
+        speed: 0.4
+    });
+
+
+    // carousels
+
+    $('#carousel-slider').owlCarousel({
         loop: true,
         margin: 0,
         items: 1,
         dots: false,
-        autoplay: true
-    });
-
-    $(".blogapp-next").click(function() {
-        $('#blogapp-carousel').trigger('next.owl.carousel');
-    });
-    $(".blogapp-prev").click(function() {
-        $('#blogapp-carousel').trigger('prev.owl.carousel');
-    });
-
-    $('#nativator-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 1,
-        dots: false,
-        autoplay: true
-    });
-
-    $(".nativator-next").click(function() {
-        $('#nativator-carousel').trigger('next.owl.carousel');
-    });
-    $(".nativator-prev").click(function() {
-        $('#nativator-carousel').trigger('prev.owl.carousel');
-    });
-
-    $('#car-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        items: 1,
-        dots: false,
+        lazyLoad: true,
         autoplay: true,
         autoplayTimeout: 3000
     });
 
-    $(".app-next").click(function() {
-        $('#car-carousel').trigger('next.owl.carousel');
-    });
-    $(".app-prev").click(function() {
-        $('#car-carousel').trigger('prev.owl.carousel');
+    $('#nativator-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: false,
+        lazyLoad: true,
+        autoplay: true,
+        autoplayTimeout: 3000
     });
 
-    $('#phone1').owlCarousel({
+    $('#magazines-slider-1').owlCarousel({
         loop: true,
         margin: 0,
         items: 1,
@@ -63,7 +95,7 @@ $(document).ready(function() {
         autoplayTimeout: 3000
     });
     setTimeout(function() {
-        $('#phone2').owlCarousel({
+        $('#magazines-slider-2').owlCarousel({
             loop: true,
             margin: 0,
             items: 1,
@@ -74,7 +106,7 @@ $(document).ready(function() {
         });
     }, 200)
     setTimeout(function() {
-        $('#phone3').owlCarousel({
+        $('#magazines-slider-3').owlCarousel({
             loop: true,
             margin: 0,
             items: 1,
@@ -85,54 +117,40 @@ $(document).ready(function() {
         });
     }, 600)
 
-    $(".mag-app-next").click(function() {
-        $('#phone1').trigger('next.owl.carousel');
+    $('#blogapp-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: false,
+        lazyLoad: true,
+        autoplay: true,
+        autoplayTimeout: 3000
+    });
+
+    $(".next").click(function() {
+        $('#nativator-slider').trigger('next.owl.carousel');
+        $('#carousel-slider').trigger('next.owl.carousel');
+        $('#magazines-slider-1').trigger('next.owl.carousel');
+        $('#blogapp-slider').trigger('next.owl.carousel');
         setTimeout(function() {
-            $('#phone2').trigger('next.owl.carousel');
+            $('#magazines-slider-2').trigger('next.owl.carousel');
         }, 200)
         setTimeout(function() {
-            $('#phone3').trigger('next.owl.carousel');
+            $('#magazines-slider-3').trigger('next.owl.carousel');
         }, 400)
     });
-    $(".mag-app-prev").click(function() {
-        $('#phone1').trigger('prev.owl.carousel');
+    $(".prev").click(function() {
+        $('#nativator-slider').trigger('prev.owl.carousel');
+        $('#carousel-slider').trigger('prev.owl.carousel');
+        $('#magazines-slider-1').trigger('prev.owl.carousel');
+        $('#blogapp-slider').trigger('prev.owl.carousel');
         setTimeout(function() {
-            $('#phone2').trigger('prev.owl.carousel');
+            $('#magazines-slider-2').trigger('prev.owl.carousel');
         }, 200)
         setTimeout(function() {
-            $('#phone3').trigger('prev.owl.carousel');
+            $('#magazines-slider-3').trigger('prev.owl.carousel');
         }, 400)
     });
-
-
-    // popup
-    $('.lang-on').click(function(event) {
-        event.preventDefault();
-        $('.popup-lang').css('display', 'flex');
-        $('.wrapper, .main-head').css('filter', 'blur(30px)');
-        $('.wrapper, .main-head').css('-webkit-filter', 'blur(30px)');
-        $('.main-wrapper').css({
-            'position': 'fixed',
-            'width': '100%',
-            'margin': '0 auto'
-        });
-    });
-
-    // popup close
-    $('.popup-lang, .lang li').click(function() {
-        $('.popup-lang').css('display', 'none');
-        $('.wrapper, .main-head').css('filter', 'none');
-        $('.wrapper, .main-head').css('-webkit-filter', 'none');
-        $('.main-wrapper').css({
-            'position': 'relative',
-            'margin': '0'
-        });
-    });
-
-    // close lang panel
-    $('.lang-off').click(function() {
-        $('.lang').css('display', 'none');
-    })
 
     // chrome Smooth Scroll
     try {
