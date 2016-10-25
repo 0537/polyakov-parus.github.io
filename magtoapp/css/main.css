@@ -2189,6 +2189,9 @@ h4.happy {
 }
 
 @media only screen and (max-width: 767px) {
+  .nav-item-wrapper:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
   .nav-item {
     height: calc(100vw - 30px);
     margin-bottom: 15px;
@@ -2344,6 +2347,9 @@ h4.happy {
 }
 
 @media only screen and (max-width: 375px) {
+  .nav-item-wrapper:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
   .nav-item h2 {
     font-size: 22px;
   }
@@ -2382,6 +2388,9 @@ h4.happy {
 }
 
 @media only screen and (max-width: 320px) {
+  .nav-item-wrapper:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
   .nav-item h2 {
     font-size: 22px;
   }
