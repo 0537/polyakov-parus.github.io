@@ -312,17 +312,9 @@ h3 {
   background-color: #ecdbc7;
 }
 
-.remodal-wrapper {
-  overflow: visible;
-}
-
-.remodal.git-modal {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  display: table;
-  background-color: transparent;
-  padding: 0;
+.remodal {
+  max-width: 400px;
+  background: none;
 }
 
 .remodal.git-modal .remodal-close {
@@ -331,7 +323,7 @@ h3 {
   height: 50px;
   border-radius: 50%;
   border: 2px solid #000;
-  top: 10%;
+  top: -20%;
 }
 
 .remodal.git-modal .remodal-close:before {
@@ -863,6 +855,7 @@ body {
   right: 25%;
 }
 
+.main-serv-more .serv-more .service-ul,
 .main-services .services .service-ul {
   position: relative;
   background-color: #313030;
@@ -874,11 +867,15 @@ body {
   z-index: 100;
 }
 
+.main-serv-more .serv-more .service-ul ul li,
 .main-services .services .service-ul ul li {
+  color: #fff;
   position: relative;
   line-height: 2rem;
+  font-size: 14px;
 }
 
+.main-serv-more .serv-more .service-ul ul li:after,
 .main-services .services .service-ul ul li:after {
   content: '';
   position: absolute;
