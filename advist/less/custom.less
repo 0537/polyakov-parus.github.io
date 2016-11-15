@@ -213,6 +213,14 @@ ol:not([class]) {
     }
 }
 
+.form-group.form-group-i.i-map.map-in-popup {
+  width: 63%;
+}
+
+input.form-control.city-in-popup {
+  width: 100%;
+}
+
 .form-group-textarea {
 
     &:before {
@@ -2603,7 +2611,7 @@ Responsive Media Querries
 
     // табы с адвокатами
 
-    .adv-cont {
+    .overflow-block {
       overflow: hidden;
     }
 
@@ -2957,9 +2965,21 @@ Responsive Media Querries
     //   box-shadow: none;
     // }
 
+    .nav>li.disabled>a:focus:after, .nav>li.disabled>a:hover:after {
+      width: 83%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
 }
 
-
+@media (max-width: 375px) {
+  .nav>li.disabled>a:focus:after, .nav>li.disabled>a:hover:after {
+    width: 62%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 /* Small devices - Mobile (<) */
 @media (max-width: @screen-xs) {
