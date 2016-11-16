@@ -78,7 +78,7 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: @modal-title-padding;
-  border-bottom: 1px solid @modal-header-border-color;
+  // border-bottom: 1px solid @modal-header-border-color;
   &:extend(.clearfix all);
 }
 // Close icon
@@ -147,6 +147,15 @@
 
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
+}
+
+@media (max-width: 475px) {
+  #modal-chat .modal-dialog {
+    position: relative !important;
+    margin: 10px !important;
+    right: auto !important;
+    bottom: auto !important;
+  }
 }
 
 
