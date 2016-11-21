@@ -9,6 +9,7 @@ svg.small-bag {
     top: -2px;
     height: 20px;
     margin-right: 10px;
+    display: none;
 }
 
 .mobile-chat-cont {
@@ -2845,7 +2846,11 @@ Responsive Media Querries
     }
 }
 
-
+@media (max-width: 1024px) {
+  svg.small-bag {
+      display: inline-block;   
+  }
+}
 
 /* Small devices - Tablets (<) */
 @media (max-width: @screen-sm) {
