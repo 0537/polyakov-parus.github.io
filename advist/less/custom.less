@@ -2,14 +2,39 @@
 These styles do not ship with Bootstrap
 */
 
-//sasdassdasd
-
 svg.small-bag {
     position: relative;
     top: -2px;
     height: 20px;
     margin-right: 10px;
     display: none;
+}
+
+.form-control.form-problem {
+    font-weight: 600 !important;
+    padding-top: 12px;
+    cursor: default;
+    position: relative;
+    width: 205px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -5px;
+      top: 46px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 10px solid #fff;
+    }
+}
+
+.form-problem {
+  width: 300px;
+  // line-height: 34;
+  color: #000;
 }
 
 .mobile-chat-cont {
@@ -2373,6 +2398,8 @@ input.form-control.city-in-popup {
 
 
 .cont-face {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
 }
 
@@ -2391,6 +2418,8 @@ input.form-control.city-in-popup {
 }
 
 .cont-time {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
   order: 3;
 
   img {
@@ -2399,6 +2428,8 @@ input.form-control.city-in-popup {
 }
 
 .cont-rate {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
   order: 4;
 
   .data-txt-mb1 .i-star {
@@ -2407,6 +2438,8 @@ input.form-control.city-in-popup {
 }
 
 .cont-price {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
   order: 5;
 }
 
@@ -2436,6 +2469,12 @@ input.form-control.city-in-popup {
 
 .big-rate {
   font-size: 22px;
+}
+
+a.m-event-js {
+  color: #000;
+  text-decoration: none;
+  cursor: default;
 }
 
 
@@ -2507,6 +2546,10 @@ Responsive Media Querries
 
 /* Medium devices - Tablets (<) */
 @media (max-width: @screen-md) {
+
+    a.fuck {
+      pointer-events: auto;
+    }
 
     .b-header  {
 
@@ -2687,12 +2730,16 @@ Responsive Media Querries
 
     .cont-distance {
       margin-top: 10px;
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
       order: 4;
     }
 
     .cont-time {
       position: relative;
       margin-top: 10px;
+      -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
       order: 5;
 
       button,
@@ -2719,6 +2766,8 @@ Responsive Media Querries
 
     .cont-rate {
       margin-top: 10px;
+      -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
       order: 6;
 
       span, .rating-stars {
@@ -2747,6 +2796,24 @@ Responsive Media Querries
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2;
+
+      button {
+        display: none;
+      }
+
+      .m-price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        div:first-of-type {
+          margin-bottom: 20px;
+        }
+      }
     }
 
     .searcher .data-body {
@@ -2756,19 +2823,17 @@ Responsive Media Querries
     .m-feedback {
       display: inline-block;
       position: relative;
-      bottom: 3px;
-      font-size: 12px;
-      text-align: right;
 
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        height: 1px;
-        width: 100%;
-        border-bottom: 1px solid gray;
-      }
+      font-size: 14px;
+      line-height: 1;
+      text-align: right;
+      color: #30ab4a;
+
+      border: 1px solid #30ab4a;
+      border-radius: 5px;
+
+      padding: 10px 20px;
+
 
       .m-feedback-count {
         margin-left: 5px;
@@ -2848,7 +2913,7 @@ Responsive Media Querries
 
 @media (max-width: 1024px) {
   svg.small-bag {
-      display: inline-block;   
+      display: inline-block;
   }
 }
 
@@ -3013,6 +3078,12 @@ Responsive Media Querries
     width: 62%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav>li.disabled>a:focus:after, .nav>li.disabled>a:hover:after {
+    margin-left: 20px;
   }
 }
 
@@ -3478,7 +3549,7 @@ Responsive Media Querries
 
         .btn {
             font-weight: 400;
-            width: 49%;
+            // width: 49%;
             height: auto;
             margin-right: 10px;
         }
@@ -3846,6 +3917,11 @@ Responsive Media Querries
         font-size: 14px;
       }
     }
+
+    // .sort-btn .btn {
+    //   width: 21%;
+    //   height: 50px;
+    // }
 }
 
 
@@ -3864,7 +3940,7 @@ Responsive Media Querries
 
 @media (max-width: 375px) {
   .cont-price .data-txt-lg1 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .flex.space-between>div:nth-child(1).cont-face {
@@ -3885,7 +3961,7 @@ Responsive Media Querries
   }
 
   .m-feedback {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .media-body p br {

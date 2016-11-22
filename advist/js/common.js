@@ -1,11 +1,21 @@
 jQuery(document).ready(function($) {
 
+
+
+
 		// врубаем подложку и перемещаем в центр окна чата на мобильных устройствах
 		var backdropPoint = $(window).width();
 		if (backdropPoint < 475) {
 			$('.chat-anchor-js').attr('data-backdrop', 'true');
 		} else {
 			$('.chat-anchor-js').attr('data-backdrop', 'false');
+		}
+
+		//вырубаем ссылку в поисковой выдаче на десктопе
+		if (backdropPoint > 1024) {
+			$(document).on("click", ".m-event-js", function (e) {
+					e.preventDefault();
+			});
 		}
 
 
@@ -88,7 +98,6 @@ jQuery(document).ready(function($) {
             close: 'glyphicon glyphicon-remove'
         }
     });
-
 
 });
 
