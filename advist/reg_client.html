@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-5 col-md-4 col-lg-4 txt-nowrap">
                     <a href="/" class="logo-inner">
-                        <img src="img/logo_inner.png" class="img-responsive" alt="Image">
+                        <img src="img/logo.svg" class="img-responsive" alt="Image">
                     </a>
                     <div class="law-dropdown btn-town-wrap">
                         <button type="button" class="dropdown-toggle form-control btn-town btn-town-in" data-toggle="modal" data-target='#modal-town'>Город <b class="caret"></b></button>
@@ -70,7 +70,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="data-bg-bs data-bdb">
-                    <section class="data-body data-bdr flex">
+                    <section class="data-body data-bdr flex flex-wrp-1">
                         <div class="data-body data bdr flex-col-2">
                           <div class="data-txt-md data-txt-mb1">Ваши данные для юриста</div>
                           <div class="form-horizontal data-body-mb">
@@ -92,18 +92,14 @@
                                       <input type="text" class="form-control" placeholder="+7 ( --- ) --- _ -- _ --" data-mask="+7 (000) 000-00-00">
                                   </div>
                               </div>
-                              <div class="data-txt-sm data-body-mb">
-                                  <sup class="text-danger">*</sup>поля обязательные для заполнения
-                              </div>
+
                           </div>
-                        </div>
-                        <div class="data-body flex-col-2">
                           <div class="data-txt-sm data-txt-mb"><b>Подтвердите, что Ваш номер указан верно</b></div>
                           <div class="row data-txt-mb">
                               <div class="col-xs-12 col-sm-8">
                                   <div class="form-group">
                                       <button type="button" class="btn btn-primary btn-data btn-block">Получить код по SMS</button>
-                                      <div class="text-center contract-offer"><a href="#">Договор оферты</a></div>
+                                      <!-- <div class="text-center contract-offer"><a href="#">Договор оферты</a></div> -->
                                   </div>
                               </div>
                               <div class="col-xs-12 col-sm-4">
@@ -112,7 +108,11 @@
                                   </div>
                               </div>
                           </div>
-
+                        </div>
+                        <div class="data-body flex-col-2 wrp-2">
+                          <div class="data-txt-sm data-body-mb imp-field">
+                              <sup class="text-danger">*</sup>поля обязательные для заполнения
+                          </div>
                           <div class="checkbox">
                               <label>
                                   <input type="checkbox" value="">
@@ -132,19 +132,17 @@
                               </label>
                           </div>
 
+                          <div class="col-md-8 accept-button">
+                            <button type="button" class="btn btn-success btn-data btn-block">Готово</button>
+                          </div>
+
                         </div>
                     </section>
-                    <section class="data-body accept-button">
-                      <div class="col-md-12">
-                        <div class="col-md-offset-4 col-md-4">
-                          <button type="button" class="btn btn-success btn-data btn-block">Готово</button>
-                        </div>
-                      </div>
-                      <br>
-                      <br>
-                      <br>
+
+                    <section class="data-body contract-offer">
                       <div class="text-center"><a href="#">Договор оферты</a> становится действительным при получении, вводе промокода и нажатии кнопки «Готово»</div>
                     </section>
+
                     <section class="data-body flex">
                         <br>
                         <div class="col-md-12">

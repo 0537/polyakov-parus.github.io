@@ -2,8 +2,17 @@
 These styles do not ship with Bootstrap
 */
 
+.flex-wrp-1 {
+  align-items: flex-end;
+}
+
 .contract-offer {
-  margin-top: 20px;
+  margin-top: -70px;
+}
+
+.media.work .pull-left {
+  min-width: 65px;
+  margin-right: 10px;
 }
 
 svg.small-bag {
@@ -842,8 +851,8 @@ input.form-control.city-in-popup {
     margin-bottom: 35px;
 
     .pull-left {
-        width: 75px;
-        padding-right: 30px;
+        // width: 65px;
+        // padding-right: 30px;
     }
 
     i:before {
@@ -2468,7 +2477,9 @@ input.form-control.city-in-popup {
 }
 
 .accept-button {
-  margin-top: -50px;
+  margin-top: 23px;
+  padding-left: 0;
+  padding-bottom: 32px;
 }
 
 .big-rate {
@@ -2493,7 +2504,7 @@ Responsive Media Querries
     .media.work {
 
         .pull-left {
-            padding-right: 20px;
+            // padding-right: 20px;
         }
 
         i:before {
@@ -3070,7 +3081,7 @@ Responsive Media Querries
     // }
 
     .nav>li.disabled>a:focus:after, .nav>li.disabled>a:hover:after {
-      width: 83%;
+      // width: 83%;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -3079,15 +3090,21 @@ Responsive Media Querries
 
 @media (max-width: 375px) {
   .nav>li.disabled>a:focus:after, .nav>li.disabled>a:hover:after {
-    width: 62%;
+    // width: 62%;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .accept-button {
+    padding: 0;
+    padding-bottom: 40px;
   }
 }
 
 @media (max-width: 320px) {
   .nav>li.disabled>a:focus:after, .nav>li.disabled>a:hover:after {
-    margin-left: 20px;
+    // margin-left: 20px;
   }
 }
 
@@ -3928,6 +3945,17 @@ Responsive Media Querries
     // }
 }
 
+
+@media (max-width: 828px) {
+
+  .wrp-2 {
+    margin-top: -50px;
+  }
+
+  .imp-field {
+    margin-bottom: 50px;
+  }
+}
 
 @media (max-width: 768px) {
   .writeus {
