@@ -1,5 +1,9 @@
 jQuery(document).ready(function($) {
 
+		$('.faq-link').on('click', function () {
+				$(this).parent().find('.faq-item').slideToggle();
+		});
+
 
 
 
