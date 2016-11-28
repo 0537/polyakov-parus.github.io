@@ -1,0 +1,685 @@
+@media (max-width: 1366px) {
+
+  .context-targets .left-block {
+    .photo {
+      z-index: 100;
+    }
+
+    .speaker {
+      z-index: 101;
+    }
+  }
+
+  .context-targets .right-block .blur-pen {
+    left: -150px;
+  }
+
+  .context-targets .right-block .description {
+    z-index: 99;
+    left: 50px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .flag {
+      right: -263px;
+    }
+
+    .redline {
+      left: -200px;
+    }
+
+    .points-wrapper div:not(:last-of-type) {
+      margin-right: 40%;
+    }
+  }
+
+  .context-strategy {
+    .right-block {
+      .description {
+        left: 50px;
+      }
+    }
+  }
+
+  .context-control{
+    .left-block .cockpit-wrapper {
+      left: -200px;
+    }
+
+    .right-block {
+      .right-jet {
+        left: 350px;
+      }
+
+      .left-jet {
+        right: 550px;
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+
+  .context-targets .left-block .speaker span br {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .context-start {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .left-block {
+      height: auto;
+
+      .description {
+        top: auto;
+        padding-right: 0;
+      }
+
+      .links {
+        top: auto;
+
+        ul {
+          width: 35%;
+          margin-right: 20px;
+          margin-top: 40px;
+          line-height: 1;
+
+          li a {
+            line-height: 1.8;
+          }
+
+          li:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      h1 {
+        position: relative;
+      }
+    }
+
+    .right-block {
+      display: none;
+    }
+  }
+
+  .context-targets {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .context-wrapper {
+      overflow: visible;
+      position: static;
+      height: auto;
+    }
+
+    .context-wrapper .container .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left-block {
+      order: 2;
+      margin-top: 70px;
+      height: auto;
+
+      .red-sqr {
+        display: none;
+      }
+
+      .photo {
+        height: 300px;
+        left: 0;
+        right: auto;
+        bottom: -50px;
+      }
+
+      .speaker {
+        position: relative;
+        width: calc(50% + 20px);
+        left: calc(40% - 40px);
+        bottom: 0;
+
+        span:last-child {
+          line-height: 1.1;
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .right-block {
+      order: 1;
+      height: auto;
+
+      .blur-book,
+      .blur-pen {
+        display: none;
+      }
+
+      .description {
+        position: static;
+        height: auto;
+        padding: 0;
+
+        h2 {
+          margin-bottom: 40px;
+        }
+
+        .redline,
+        .points-wrapper {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .context-strategy {
+    .left-block {
+      position: relative;
+    }
+
+    .right-block .description {
+      left: 0;
+
+      .audit-icon {
+        left: 27%;
+      }
+
+      .audit {
+        left: 47%;
+      }
+    }
+  }
+
+  .context-config {
+    height: auto;
+
+    .left-block {
+      height: auto;
+
+      .description {
+        top: 130px;
+        z-index: 100;
+      }
+    }
+
+    .right-block {
+      height: auto;
+
+      #configScene {
+        top: -100px;
+        left: -200px;
+        z-index: 10;
+      }
+
+      .text-2 {
+        left: 220px;
+      }
+    }
+  }
+
+  .context-research {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .left-block {
+      height: auto;
+
+      .description {
+        top: 0;
+        z-index: 1000;
+      }
+
+      .treasure,
+      .fish-blured {
+        display: none;
+      }
+    }
+
+    .right-block {
+      display: none;
+    }
+  }
+
+  .context-control{
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    .left-block {
+      height: auto;
+
+      .cockpit-wrapper {
+        position: absolute;
+        opacity: .2;
+        left: -150px;
+        bottom: -600px;
+      }
+
+      .joystick {
+        animation: none;
+      }
+
+    }
+
+    .right-block {
+      height: auto;
+
+      .control-scene {
+        display: none;
+      }
+
+      .description {
+        position: relative;
+        z-index: 1000;
+        top: 0;
+      }
+    }
+
+
+    .jet-control {
+      display: none;
+    }
+  }
+
+  .context-report {
+
+    .context-wrapper {
+      position: relative;
+      height: 100%;
+    }
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+
+    .left-block {
+      position: absolute;
+      height: auto;
+      left: -200px;
+      right: 0;
+
+      .pen-black,
+      .report-number-1,
+      .report-number-2 {
+        display: none;
+      }
+
+      .paper {
+        opacity: .3;
+      }
+    }
+
+    .right-block {
+      height: auto;
+
+      .description {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .context-button {
+          margin-left: 0;
+        }
+      }
+    }
+
+  }
+
+  .context-price {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .left-block {
+      height: auto;
+      .description {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .right-block {
+      height: auto;
+
+      img {
+        display: none;
+      }
+
+      .form-price {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        width: auto;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .context-end {
+    .right-block {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .context-targets .left-block {
+    .photo {
+      left: auto;
+      right: 50%;
+    }
+
+    .speaker {
+      left: calc(50% - 40px);
+    }
+  }
+
+  .context-targets .right-block .description h2 {
+    font-size: 48px;
+  }
+
+  .context-strategy {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .left-block {
+      display: none;
+    }
+
+    .right-block {
+      height: auto;
+
+      .map {
+        top: -50px;
+        left: -400px;
+        opacity: .4;
+        z-index: 1;
+      }
+
+      .description {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        .audit-icon {
+          left: 0;
+        }
+
+        .audit {
+          left: 90px;
+        }
+      }
+    }
+  }
+
+  .context-config {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .left-block .description {
+      position: relative;
+      top: 0;
+    }
+
+    .right-block {
+      position: absolute;
+      top: 0;
+
+      .brain {
+        opacity: .3;
+      }
+
+      .text-2 {
+        left: 90%;
+        filter: blur(10px);
+      }
+    }
+  }
+
+  .context-control {
+
+  }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .context-price .right-block .form-price {
+    width: 100%;
+    left: 0;
+
+    input {
+      width: 100%;
+    }
+
+    .submit-btn {
+      align-self: center;
+    }
+  }
+
+
+  .context-price .left-block .description p,
+  .context-team .right-block .description p {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  h1, h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .context-end,
+  .context-start {
+    .left-block .links {
+      flex-direction: column;
+
+      ul {
+        width: 100%;
+
+        &:last-child {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .context-targets {
+    .left-block {
+      margin-top: 100px;
+      .photo {
+        left: -90px;
+        right: auto;
+      }
+      .speaker {
+        width: auto;
+        left: auto;
+        bottom: 20px;
+
+        span {
+          text-align: right;
+          br {
+            display: block;
+          }
+        }
+
+        span:first-child {
+          margin-bottom: 10px;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .right-block .description h2 {
+      font-size: 32px;
+    }
+  }
+
+  .context-result {
+    .left-block {
+      margin-top: 320px;
+
+      .photo {
+        position: absolute;
+        left: -90px;
+        right: auto;
+      }
+
+      .speaker {
+        position: absolute;
+        width: 50%;
+        left: auto;
+        right: 20px;
+        bottom: 50px;
+
+        span {
+          text-align: right;
+          br {
+            display: block;
+          }
+        }
+
+        span:first-child {
+          margin-bottom: 10px;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .right-block .description .context-button {
+      display: inline;
+      padding: 0;
+      line-height: 1.7;
+      border-radius: 0;
+      background-color: #fff;
+      color: #e53339;
+      border-bottom: 1px dashed #e53339;
+    }
+  }
+
+
+
+  .context-end .left-block h3 {
+    margin-top: 40px
+  }
+
+}
+
+
+
+
+@media (max-width: 425px) {
+
+  .button-text-hide {
+    display: none;
+  }
+
+  .context-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .context-start {
+    .left-block h1 br {
+      display: inline;
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .context-button {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .context-targets .left-block {
+
+    .speaker {
+      bottom: -20px;
+
+      span:first-child {
+        font-size: 18px;
+      }
+    }
+
+    .photo {
+      left: -110px;
+    }
+
+  }
+
+  .context-end .left-block .context-button {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .context-button span {
+    display: none;
+  }
+
+  .context-result .left-block .speaker span:last-child {
+    color: #000;
+  }
+
+  .context-price .right-block .form-price .submit-btn,
+  .context-report .right-block .description .context-button {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .context-targets .right-block .description h2 {
+    font-size: 28px;
+  }
+
+  .context-price .right-block .form-price .submit-btn {
+    font-size: 12px;
+  }
+
+  .context-end .left-block .context-button {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+
+}
